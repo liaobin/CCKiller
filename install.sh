@@ -275,10 +275,10 @@ install()
     echo; echo -n 'Downloading source files...'
     check_env >/dev/null 2>&1
     echo -n '.'
-    Wget $Base_Dir/cckiller https://zhangge.net/wp-content/uploads/files/cckiller/cckiller.sh?ver=$(date +%M|md5sum|awk '{print $1}')
+    Wget $Base_Dir/cckiller https://raw.githubusercontent.com/liaobin/CCKiller/master/cckiller.sh)
     
     test -d /etc/init.d || mkdir -p /etc/init.d
-    Wget /etc/init.d/cckiller https://zhangge.net/wp-content/uploads/files/cckiller/cckiller_service.sh?ver=$(date +%M|md5sum|awk '{print $1}')
+    Wget /etc/init.d/cckiller https://raw.githubusercontent.com/liaobin/CCKiller/master/cckiller_service.sh)
     chmod 0755 $Base_Dir/cckiller
     
     chmod 0755 /etc/init.d/cckiller
