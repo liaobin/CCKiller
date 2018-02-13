@@ -1,8 +1,9 @@
 # CCkiller
 Linux attack defense scripts tool --- Linux CC攻击防御工具脚本
 
+运行：sudo dpkg-reconfigure dash 选择no
 1. 请执行如下命令在线安装：
-wget --no-check-certificate -O install.sh https://zhangge.net/wp-content/uploads/files/cckiller/install.sh?ver=1.0.1 && chmod +x install.sh && ./install.sh -i
+wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/joviqiao/CCKiller/master/install.sh && chmod +x install.sh && ./install.sh -i
 
 
 2015-09-23 Ver 1.0.1：
